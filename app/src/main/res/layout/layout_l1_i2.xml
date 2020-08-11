@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文字大小："
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/text_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="50"
+                android:min="5"
+                android:progress="15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文字颜色："
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#000"
+                android:padding="1dp">
+
+                <View
+                    android:id="@+id/text_color_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文字成放射形："
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/text_path_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'一季度'文字颜色："
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#000"
+                android:padding="1dp">
+
+                <View
+                    android:id="@+id/text_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="背景颜色："
+                android:textSize="20sp" />
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#000"
+                android:padding="1dp">
+
+                <View
+                    android:id="@+id/color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f00" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'二季度'文字颜色："
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#000"
+                android:padding="1dp">
+
+                <View
+                    android:id="@+id/text_color2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="背景颜色："
+                android:textSize="20sp" />
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#000"
+                android:padding="1dp">
+
+                <View
+                    android:id="@+id/color2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#0f0" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'三季度'文字颜色："
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#000"
+                android:padding="1dp">
+
+                <View
+                    android:id="@+id/text_color3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="背景颜色："
+                android:textSize="20sp" />
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#000"
+                android:padding="1dp">
+
+                <View
+                    android:id="@+id/color3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00f" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'四季度'文字颜色："
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#000"
+                android:padding="1dp">
+
+                <View
+                    android:id="@+id/text_color4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="背景颜色："
+                android:textSize="20sp" />
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#000"
+                android:padding="1dp">
+
+                <View
+                    android:id="@+id/color4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置并查看效果" />
+
+    <com.xfy.lesson.FanView
+        android:id="@+id/fan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fv_textColor="#fff"
+        app:fv_textSize="15sp" />
+</LinearLayout>
